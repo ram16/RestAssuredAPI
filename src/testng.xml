@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="InventoryAPITests" parallel="false">
+    <test name="SmokeTests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <!-- Only include classes with smoke tests to avoid warnings about missing groups -->
+            <class name="com.example.inventoryapi.tests.productManagement.CreateProductTest"/>
+            <class name="com.example.inventoryapi.tests.productManagement.GetProductTest"/>
+            <class name="com.example.inventoryapi.tests.productManagement.GetProductByIdTest"/>
+            <class name="com.example.inventoryapi.tests.stockManagement.CreateOrderTest"/>
+        </classes>
+    </test>
+    <test name="RegressionTests">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.inventoryapi.tests.productManagement.CreateProductTest"/>
+            <class name="com.example.inventoryapi.tests.productManagement.DeleteProductTest"/>
+            <class name="com.example.inventoryapi.tests.productManagement.GetProductByIdTest"/>
+            <class name="com.example.inventoryapi.tests.productManagement.GetProductTest"/>
+            <class name="com.example.inventoryapi.tests.productManagement.UpdateProductTest"/>
+            <class name="com.example.inventoryapi.tests.stockManagement.CreateOrderTest"/>
+            <class name="com.example.inventoryapi.tests.stockManagement.OrderTests"/>
+        </classes>
+    </test>
+</suite>
