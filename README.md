@@ -16,7 +16,8 @@ This project provides automated API tests for an Inventory Management system usi
    - Send HTTP requests (GET, POST, PUT, DELETE) to API endpoints.
    - Validate status codes, response bodies, and headers.
    - Use assertions to check business logic.
-3. **Reporting:** Generate Allure reports after test execution for detailed insights.
+3. **Reporting:Pending ** Generate Allure reports after test execution for detailed insights.
+4. 
 
 ## How to Run
 
