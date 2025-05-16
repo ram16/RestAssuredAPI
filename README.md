@@ -37,7 +37,7 @@ This project provides automated API tests for an Inventory Management system usi
    - Open `target/site/allure-maven-plugin/index.html` in your browser, or
    - Run `mvn allure:serve` to view the report locally.
 
-## Suggestions for Extension
+## can apply futher for Extension
 
 - Add CI/CD integration for automated testing.
 - Parameterize tests for broader coverage.
